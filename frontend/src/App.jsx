@@ -5,7 +5,7 @@ import './App.css'
 function App() {
   const [jokes, setJokes] = useState([]);
 
-  useEffect(() => { })
+
 
   useEffect(() => {
     axios.get('/api/jokes')
@@ -16,6 +16,7 @@ function App() {
         console.log(error)
       })
   })
+  
   return (
     <div>
       <h1> stack</h1>
